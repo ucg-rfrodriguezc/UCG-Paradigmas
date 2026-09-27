@@ -7,5 +7,5 @@ st.write("Elaborado por: Ronald Rodríguez Castro")
 capital = st.number_input("Ingrese el capital: ")
 tasa_anual_pct = st.number_input("Ingrese tasa anual: ")
 dias_mora = st.number_input("Ingrese los días de mora: ")
-
-# resultado = lf.calcular_interes_mora()
+resultado = lf.calcular_interes_mora(capital, tasa_anual_pct, dias_mora)
+st.write("El resultado por atraso es: ", resultado)
